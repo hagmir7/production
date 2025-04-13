@@ -81,4 +81,9 @@ class AuthController extends Controller
     {
         return response()->json($request->user());
     }
+
+
+    public function show($id){
+        return User::find($id);
+    }
 }
